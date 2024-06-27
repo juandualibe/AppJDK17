@@ -75,26 +75,11 @@ public class Mavenproject1 extends JFrame {
         panelAgregarProducto.add(btnAgregarProducto);
 
         // Panel para quitar y agregar stock
-        JPanel panelStock = new JPanel(new GridLayout(2, 1, 10, 10));
-        panelStock.setBorder(BorderFactory.createTitledBorder("Stock"));
+        
+            
+        
 
-        // Panel para quitar stock
-        JPanel panelQuitarStock = new JPanel(new GridLayout(2, 2, 10, 10));
-        panelQuitarStock.setBorder(BorderFactory.createTitledBorder("Quitar Stock"));
-
-        JLabel lblCantidadQuitar = new JLabel("Cantidad a quitar:");
-        txtCantidadQuitar = new JTextField();
-        btnQuitarStock = new JButton("Quitar Stock");
-        btnQuitarStock.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                quitarStock();
-            }
-        });
-
-        panelQuitarStock.add(lblCantidadQuitar);
-        panelQuitarStock.add(txtCantidadQuitar);
-        panelQuitarStock.add(btnQuitarStock);
+        
 
         // Panel para agregar stock
         JPanel panelAgregarStock = new JPanel(new GridLayout(2, 2, 10, 10));
@@ -113,9 +98,11 @@ public class Mavenproject1 extends JFrame {
         panelAgregarStock.add(lblCantidadAgregar);
         panelAgregarStock.add(txtCantidadAgregar);
         panelAgregarStock.add(btnAgregarStock);
+        Component panelStock = null;
 
-        panelStock.add(panelQuitarStock);
-        panelStock.add(panelAgregarStock);
+        
+        
+        
 
         // Panel para eliminar productos
         JPanel panelEliminarProducto = new JPanel(new GridLayout(1, 1, 10, 10));
